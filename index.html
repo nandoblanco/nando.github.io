@@ -1,1 +1,53 @@
-test12
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nando Blanco</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+<link href="unslider.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+  <div id="header">Nando Blanco</div>
+  <div id="content">
+    <div class="my-slider">
+      <ul>
+        <li>Hello.</li>
+        <li>My name is Fernando Blanco, most people call me Nando.</li>
+        <li>I'm a self-taught freelance web developer that specializes  in front-end work.</li>
+        <li>I have experience with HTML, CSS, JavaScript, jQuery, AngularJS,  PHP and WordPress.</li>
+        <li>My work process includes (but is not limited to): trial  &amp; error, Google and Stack Overflow. </li>
+        <li>I&rsquo;m currently employed at a private South Florida university  (since 2006).</li>
+        <li>I'm a father, a husband and a nine-to-five zombie.</li>
+        <li>I was once a Part Time Gamer, I am now a no time gamer.</li>
+        <li>I&rsquo;m an on-again, off-again Keto Warrior. </li>
+        <li>I was born and raised in Jersey, moved to South Florida in 2000.</li>
+        <li>Although I&rsquo;d never move back, but I do miss the snow. </li>
+        <li>I bleed green.</li>
+      </ul>
+    </div>
+  </div>
+  <div id="mylittledude"></div>
+</div>
+<div class="sizechecker"></div>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script src="unslider.js"></script> 
+<script>
+	jQuery(document).ready(function($) {
+		 checkSize();
+		 $(window).resize(checkSize);
+		});
+	function checkSize(){
+    if ($(".sizechecker").css("float") == "none" ){
+		//alert ('hi');
+       $('.my-slider').unslider();
+    }
+}
+</script> 
+
+<!--https://www.fourfront.us/blog/jquery-window-width-and-media-queries-->
+
+</body>
+</html>
