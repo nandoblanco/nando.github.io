@@ -39,6 +39,9 @@
 		 checkSize();
 		 $(window).resize(checkSize);
 		});
+	$(window).resize(function() {
+        location.reload();
+	});
 	function checkSize(){
     if ($(".sizechecker").css("float") == "none" ){
 		//alert ('hi');
