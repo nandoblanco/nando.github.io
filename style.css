@@ -163,7 +163,7 @@ li {
 #content {
 	float: none;
 	display: block;
-	height: 30%;
+	height: 15%;
 }
 #mylittledude {
 	float: none;
@@ -172,7 +172,7 @@ li {
 	background-image: url("images/bg-970.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 70%;
+	height: 85%;
 	margin: 0 auto;
 }
 }
@@ -191,13 +191,13 @@ li {
 #content {
 	float: none;
 	display: block;
-	height: 30%;
+	height: 15%;
 
 }
 #mylittledude {
 	float: none;
 	display: block;
-	width: 70%;
+	width: 85%;
 	background-image: url("images/bg-970.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -249,7 +249,7 @@ li {
 #content {
 	float: none;
 	display: block;
-	height: 30%;
+	height: 15%;
 
 }
 #mylittledude {
@@ -259,7 +259,7 @@ li {
 	background-image: url("images/bg-320.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 70%;
+	height: 85%;
 	margin: 0 auto;
 }
 }
