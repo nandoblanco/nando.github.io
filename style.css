@@ -235,7 +235,8 @@ li {
 	margin: 0 auto;
 }
 }
- @media (max-width: 479px) {
+
+@media (max-width: 479px) {
 #container {
 	width: 96%;
 	margin: 0 auto;
@@ -250,17 +251,17 @@ li {
 #content {
 	float: none;
 	display: block;
-	height: 15%;
+	height: 35%;
 
 }
 #mylittledude {
 	float: none;
 	display: block;
-	width: 100%;
+	width: 70%;
 	background-image: url("images/bg-320.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 85%;
+	height: 100%;
 	margin: 0 auto;
 }
 }
