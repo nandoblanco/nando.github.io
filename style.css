@@ -33,9 +33,7 @@ li {
 .sizechecker {
 	float: right;
 }
-#header {
-	margin-bottom:5%;
-}
+
  @media (min-width: 1200px) {
 #header {
 	width: 100%;
