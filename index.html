@@ -44,18 +44,19 @@
 jQuery(document).ready(function($) {
 checkSize();
 $(window).resize(checkSize);
+$('#green').hover(function(){
+	alert("hover");
+	$('#mylittledude').addClass('green');
+	},function(){ 
+	$('#mylittledude').removeClass('green');
+	});	
 });
 function checkSize(){
 if ($(".sizechecker").css("float") == "none" ){
 $('.my-slider').unslider();
 }
 }
-$('#green').hover(function(){
-	alert("hover");
-	$('#mylittledude').addClass('green')
-	},function(){ 
-	$('#mylittledude').removeClass('green') 
-	});		
+	
 
 </script> 
 </body>
