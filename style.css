@@ -207,6 +207,9 @@ li {
 	height: 15%;
 
 }
+.green {
+	background-image: url("images/bg-970-green.png") !important;
+		}
 #mylittledude {
 	float: none;
 	display: block;
@@ -217,9 +220,7 @@ li {
 	height: 70%;
 	margin: 0 auto;
 }
-.green {
-	background-image: url("images/bg-970-green.png") !important;
-		}
+
 }
  @media (min-width: 480px) and (max-width: 599px) {
 #container {
