@@ -34,6 +34,9 @@ li {
 .sizechecker {
 	float: right;
 }
+#green,#jersey {
+	cursor:pointer;
+}
 
 @media (min-width: 1200px) {
 #header {
@@ -65,6 +68,9 @@ li {
 }
 .green {
 	background-image: url("images/bg-1170-green.png") !important;
+		}
+.jersey {
+	background-image: url("images/bg-1170-jersey.png") !important;
 		}
 }
  @media (min-width: 1024px) and (max-width: 1199px) {
@@ -207,9 +213,8 @@ li {
 	height: 15%;
 
 }
-.green {
-	background-image: url("images/bg-970-green.png") !important;
-		}
+
+		
 #mylittledude {
 	float: none;
 	display: block;
@@ -220,7 +225,9 @@ li {
 	height: 70%;
 	margin: 0 auto;
 }
-
+.green {
+	background-image: url("images/bg-970-green.png") !important;
+		}
 }
  @media (min-width: 480px) and (max-width: 599px) {
 #container {
