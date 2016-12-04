@@ -50,8 +50,19 @@ if ($(".sizechecker").css("float") == "none" ){
 //alert ('hi');
 $('.my-slider').unslider();
 }
-location.reload();
 }
+var w = 0;
+$( window ).load( function(){
+    w = $( window ).width();
+});
+$( window ).resize( function(){
+    if( w != $( window ).width() ){
+        console.log('window resized..');
+        this.location.reload(false);
+        w = $( window ).width();
+        delete w;
+    }
+});
 </script> 
 </body>
 </html>
