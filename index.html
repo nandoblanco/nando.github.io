@@ -48,7 +48,8 @@ $(window).resize(checkSize);
 function checkSize(){
 if ($(".sizechecker").css("float") == "none" ){
 $('.my-slider').unslider();
-$('#green').hover(
+} else {
+	$('#green').hover(
        function(){ $('#mylittledude').addClass('green') },
        function(){ $('#mylittledude').removeClass('green') }
 )
