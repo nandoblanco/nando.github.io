@@ -51,17 +51,15 @@ if ($(".sizechecker").css("float") == "none" ){
 $('.my-slider').unslider();
 }
 }
-var w = 0;
-$( window ).load( function(){
-    w = $( window ).width();
-});
-$( window ).resize( function(){
-    if( w != $( window ).width() ){
-        console.log('window resized..');
-        this.location.reload(false);
-        w = $( window ).width();
-        delete w;
+jQuery(function($){
+var windowWidth = $(window).width();
+
+$(window).resize(function() {
+    if(windowWidth != $(window).width()){
+    location.reload();
+    return;
     }
+});
 });
 </script> 
 </body>
