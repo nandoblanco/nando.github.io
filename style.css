@@ -63,6 +63,9 @@ li {
 	height: 100%;
 	margin: 0 auto;
 }
+#green {
+		background-image: url("images/bg-1170-green.png");
+		}
 }
  @media (min-width: 1024px) and (max-width: 1199px) {
 #header {
@@ -92,6 +95,9 @@ li {
 	height: 100%;
 	margin: 0 auto;
 }
+#green {
+		background-image: url("images/bg-970-green.png");
+		}
 }
 
 @media (min-width: 800px) and (max-width: 1023px) {
@@ -122,6 +128,9 @@ li {
 	height: 100%;
 	margin: 7% auto;
 }
+#green {
+		background-image: url("images/bg-970-green.png");
+		}
 }
 @media (max-width:1023px) {
 .sizechecker {
@@ -147,6 +156,7 @@ li {
 	width:85%;
 	margin: 0 auto;
 }
+
 }
  @media (min-width: 768px) and (max-width: 799px) {
 #container {
@@ -175,6 +185,9 @@ li {
 	height: 85%;
 	margin: 0 auto;
 }
+#green {
+		background-image: url("images/bg-970-green.png");
+		}
 }
 @media (min-width: 600px) and (max-width: 767px) {
 #container {
@@ -204,6 +217,9 @@ li {
 	height: 70%;
 	margin: 0 auto;
 }
+#green {
+		background-image: url("images/bg-970-green.png");
+		}
 }
  @media (min-width: 480px) and (max-width: 599px) {
 #container {
