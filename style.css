@@ -64,7 +64,7 @@ li {
 	margin: 0 auto;
 }
 .green {
-	background-image: url("images/bg-1170-green.png");
+	background-image: url("images/bg-1170-green.png") !important;
 		}
 }
  @media (min-width: 1024px) and (max-width: 1199px) {
@@ -96,7 +96,7 @@ li {
 	margin: 0 auto;
 }
 .green {
-	background-image: url("images/bg-970-green.png");
+	background-image: url("images/bg-970-green.png") !important;
 		}
 }
 
@@ -129,7 +129,7 @@ li {
 	margin: 7% auto;
 }
 .green {
-	background-image: url("images/bg-970-green.png");
+	background-image: url("images/bg-970-green.png") !important;
 		}
 }
 @media (max-width:1023px) {
@@ -186,7 +186,7 @@ li {
 	margin: 0 auto;
 }
 .green {
-	background-image: url("images/bg-970-green.png");
+	background-image: url("images/bg-970-green.png") !important;
 		}
 }
 @media (min-width: 600px) and (max-width: 767px) {
@@ -218,7 +218,7 @@ li {
 	margin: 0 auto;
 }
 .green {
-	background-image: url("images/bg-970-green.png");
+	background-image: url("images/bg-970-green.png") !important;
 		}
 }
  @media (min-width: 480px) and (max-width: 599px) {
