@@ -34,7 +34,7 @@ li {
 	float: right;
 }
 
- @media (min-width: 1200px) {
+@media (min-width: 1200px) {
 #header {
 	width: 100%;
 	font-size: 500%;
@@ -93,7 +93,7 @@ li {
 }
 }
 
- @media (min-width: 800px) and (max-width: 1023px) {
+@media (min-width: 800px) and (max-width: 1023px) {
 #container {
 	width: 96%;
 	margin: 0 auto;
