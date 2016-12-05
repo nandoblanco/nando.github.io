@@ -72,6 +72,9 @@ li {
 .jersey {
 	background-image: url("images/bg-1170-jersey.png") !important;
 		}
+		.keto {
+	background-image: url("images/bg-1170-keto.png") !important;
+		}
 }
  @media (min-width: 1024px) and (max-width: 1199px) {
 #header {
@@ -103,6 +106,12 @@ li {
 }
 .green {
 	background-image: url("images/bg-970-green.png") !important;
+		}
+.jersey {
+	background-image: url("images/bg-970-jersey.png") !important;
+		}
+	 	.keto {
+	background-image: url("images/bg-970-keto.png") !important;
 		}
 }
 
@@ -136,6 +145,12 @@ li {
 }
 .green {
 	background-image: url("images/bg-970-green.png") !important;
+		}
+.jersey {
+	background-image: url("images/bg-970-jersey.png") !important;
+		}
+	.keto {
+	background-image: url("images/bg-970-keto.png") !important;
 		}
 }
 @media (max-width:1023px) {
@@ -194,6 +209,12 @@ li {
 .green {
 	background-image: url("images/bg-970-green.png") !important;
 		}
+.jersey {
+	background-image: url("images/bg-970-jersey.png") !important;
+		}
+	.keto {
+	background-image: url("images/bg-970-keto.png") !important;
+		}
 }
 @media (min-width: 600px) and (max-width: 767px) {
 #container {
@@ -228,6 +249,13 @@ li {
 .green {
 	background-image: url("images/bg-970-green.png") !important;
 		}
+.jersey {
+	background-image: url("images/bg-970-jersey.png") !important;
+		}
+	.keto {
+	background-image: url("images/bg-970-keto.png") !important;
+		}
+
 }
  @media (min-width: 480px) and (max-width: 599px) {
 #container {
