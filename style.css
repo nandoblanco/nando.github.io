@@ -6,9 +6,9 @@ html, body {
 	height: 100%;
 }
 body {
-	background-color: #333;
 	color: #fff;
-	overflow: hidden;
+    overflow: hidden;
+    background-color: #333;
 }
 #container {
 	width: 100%;
@@ -39,6 +39,12 @@ li {
 }
 
 @media (min-width: 1200px) {
+body {
+	background-attachment: fixed;
+    background-image: url("images/bg-1170.png");
+    background-position: right 20% top -20%;
+    background-repeat: no-repeat;
+}
 #header {
 	width: 100%;
 	font-size: 500%;
@@ -68,12 +74,21 @@ li {
 }
 .green {
 	background-image: url("images/bg-1170-green.png") !important;
+	background-attachment: fixed;
+    background-position: right 20% top -20%;
+    background-repeat: no-repeat;
 		}
 .jersey {
 	background-image: url("images/bg-1170-jersey.png") !important;
+	background-attachment: fixed;
+    background-position: right 20% top -20%;
+    background-repeat: no-repeat;
 		}
-		.keto {
+.keto {
 	background-image: url("images/bg-1170-keto.png") !important;
+	background-attachment: fixed;
+    background-position: right 20% top -20%;
+    background-repeat: no-repeat;
 		}
 }
  @media (min-width: 1024px) and (max-width: 1199px) {
@@ -91,7 +106,7 @@ li {
 #content {
 	display: block;
 	float: left;
-	width: 50%;
+	width: 60%;
 	height: 100%;
 }
 #mylittledude {
@@ -106,12 +121,21 @@ li {
 }
 .green {
 	background-image: url("images/bg-970-green.png") !important;
+	background-attachment: fixed;
+    background-position: right 20% top -20%;
+    background-repeat: no-repeat;
 		}
 .jersey {
 	background-image: url("images/bg-970-jersey.png") !important;
+	background-attachment: fixed;
+    background-position: right 20% top -20%;
+    background-repeat: no-repeat;
 		}
-	 	.keto {
+.keto {
 	background-image: url("images/bg-970-keto.png") !important;
+	background-attachment: fixed;
+    background-position: right 20% top -20%;
+    background-repeat: no-repeat;
 		}
 }
 

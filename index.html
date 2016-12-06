@@ -35,10 +35,10 @@
       </ul>
     </div>
   </div>
-  <div id="mylittledude"></div>
+<!--  <div id="mylittledude"></div>-->
 </div>
 <div class="sizechecker"></div>
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
 <script src="unslider.js"></script> 
 <script>
 jQuery(document).ready(function($) {
@@ -46,21 +46,21 @@ checkSize();
 $(window).resize(checkSize);
 $('#green').hover(function(){
 	//alert("hover");
-	$('#mylittledude').addClass('green');
+	$('body').addClass('green');
 	},function(){ 
-	$('#mylittledude').removeClass('green');
+	$('body').removeClass('green');
 	});	
 $('#jersey').hover(function(){
 	//alert("hover");
-	$('#mylittledude').addClass('jersey');
+	$('body').addClass('jersey');
 	},function(){ 
-	$('#mylittledude').removeClass('jersey');
+	$('body').removeClass('jersey');
 	});	
 $('#keto').hover(function(){
 	//alert("hover");
-	$('#mylittledude').addClass('keto');
+	$('body').addClass('keto');
 	},function(){ 
-	$('#mylittledude').removeClass('keto');
+	$('body').removeClass('keto');
 	});	
 });
 function checkSize(){
