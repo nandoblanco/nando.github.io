@@ -7,8 +7,8 @@ html, body {
 }
 body {
 	color: #fff;
-    overflow: hidden;
-    background-color: #333;
+	overflow: hidden;
+	background-color: #333;
 }
 #container {
 	width: 100%;
@@ -24,9 +24,11 @@ ul {
 li {
 	margin: 15px 0;
 }
+.bgfont {
+	background-color: #333;
+}
 #header {
 	font-family: 'Oswald', sans-serif;
-	margin-bottom: 5%;
 }
 .unslider-nav {
 	display: none;
@@ -34,27 +36,35 @@ li {
 .sizechecker {
 	float: right;
 }
-#green,#jersey {
-	cursor:pointer;
+#green, #jersey {
+	cursor: pointer;
 }
 
 @media (min-width: 1200px) {
-body {
-	background-attachment: fixed;
-    background-image: url("images/bg-1170.png");
-    background-position: right 20% top -20%;
-    background-repeat: no-repeat;
-}
 #header {
 	width: 100%;
 	font-size: 500%;
 	text-align: center;
 	font-weight: bolder;
+	margin-bottom: 5%;
 }
 #container {
 	width: 1170px;
 	margin: 0 auto;
 	height: 100%;
+	background-image: url("images/bg.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.green {
+	background-image: url("images/bg-jets.png") !important;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.jersey {
+	background-image: url("images/bg-jersey.png") !important;
+	background-position: right bottom;
+	background-repeat: no-repeat;
 }
 #content {
 	display: block;
@@ -62,36 +72,9 @@ body {
 	width: 50%;
 	height: 100%;
 }
-#mylittledude {
-	display: block;
-	float: right;
-	width: 50%;
-	background-image: url("images/bg-1170.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	margin: 0 auto;
 }
-.green {
-	background-image: url("images/bg-1170-green.png") !important;
-	background-attachment: fixed;
-    background-position: right 20% top -20%;
-    background-repeat: no-repeat;
-		}
-.jersey {
-	background-image: url("images/bg-1170-jersey.png") !important;
-	background-attachment: fixed;
-    background-position: right 20% top -20%;
-    background-repeat: no-repeat;
-		}
-.keto {
-	background-image: url("images/bg-1170-keto.png") !important;
-	background-attachment: fixed;
-    background-position: right 20% top -20%;
-    background-repeat: no-repeat;
-		}
-}
- @media (min-width: 1024px) and (max-width: 1199px) {
+
+@media (min-width: 1024px) and (max-width: 1199px) {
 #header {
 	width: 100%;
 	font-size: 500%;
@@ -99,9 +82,22 @@ body {
 	font-weight: bolder;
 }
 #container {
-	width: 970px;
+	width: 100%;
 	margin: 0 auto;
 	height: 100%;
+	background-image: url("images/bg-1024.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.green {
+	background-image: url("images/bg-1024-jets.png") !important;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.jersey {
+	background-image: url("images/bg-1024-jersey.png") !important;
+	background-position: right bottom;
+	background-repeat: no-repeat;
 }
 #content {
 	display: block;
@@ -109,41 +105,16 @@ body {
 	width: 60%;
 	height: 100%;
 }
-#mylittledude {
-	display: block;
-	float: right;
-	width: 50%;
-	background-image: url("images/bg-970.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	margin: 0 auto;
-}
-.green {
-	background-image: url("images/bg-970-green.png") !important;
-	background-attachment: fixed;
-    background-position: right 20% top -20%;
-    background-repeat: no-repeat;
-		}
-.jersey {
-	background-image: url("images/bg-970-jersey.png") !important;
-	background-attachment: fixed;
-    background-position: right 20% top -20%;
-    background-repeat: no-repeat;
-		}
-.keto {
-	background-image: url("images/bg-970-keto.png") !important;
-	background-attachment: fixed;
-    background-position: right 20% top -20%;
-    background-repeat: no-repeat;
-		}
 }
 
 @media (min-width: 800px) and (max-width: 1023px) {
 #container {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 	height: 100%;
+	background-image: url("images/bg-1024.png");
+	background-position: right top -240%;
+	background-repeat: no-repeat;
 }
 #header {
 	width: 100%;
@@ -154,32 +125,16 @@ body {
 #content {
 	display: block;
 	float: left;
-	width: 60%;
+	width: 50%;
 	height: 100%;
+	margin-left: 5%;
+	margin-top: 10%;
 }
-#mylittledude {
-	display: block;
-	float: right;
-	width: 40%;
-	background-image: url("images/bg-970.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	margin: 7% auto;
 }
-.green {
-	background-image: url("images/bg-970-green.png") !important;
-		}
-.jersey {
-	background-image: url("images/bg-970-jersey.png") !important;
-		}
-	.keto {
-	background-image: url("images/bg-970-keto.png") !important;
-		}
-}
+
 @media (max-width:1023px) {
 .sizechecker {
-	float:none;
+	float: none;
 }
 .unslider-wrap.unslider-carousel>li {
 	text-align: center;
@@ -189,25 +144,23 @@ body {
 	left: 0px;
 }
 .next {
-	float:right;
+	float: right;
 }
 .prev {
-	float:left;
+	float: left;
 }
 .unslider {
-
 }
-#content {
-	width:85%;
-	margin: 0 auto;
 }
 
-}
- @media (min-width: 768px) and (max-width: 799px) {
+@media (min-width: 768px) and (max-width: 799px) {
 #container {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 	height: 100%;
+	background-image: url("images/bg.png");
+	background-position: center bottom -80%;
+	background-repeat: no-repeat;
 }
 #header {
 	width: 100%;
@@ -218,33 +171,19 @@ body {
 #content {
 	float: none;
 	display: block;
-	height: 15%;
+	margin-top: 5%;
+	padding: 5%;
 }
-#mylittledude {
-	float: none;
-	display: block;
-	width: 70%;
-	background-image: url("images/bg-970.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 85%;
-	margin: 0 auto;
 }
-.green {
-	background-image: url("images/bg-970-green.png") !important;
-		}
-.jersey {
-	background-image: url("images/bg-970-jersey.png") !important;
-		}
-	.keto {
-	background-image: url("images/bg-970-keto.png") !important;
-		}
-}
+
 @media (min-width: 600px) and (max-width: 767px) {
 #container {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 	height: 100%;
+	background-image: url("images/bg-1024.png");
+	background-position: center bottom -80%;
+	background-repeat: no-repeat;
 }
 #header {
 	width: 100%;
@@ -255,33 +194,12 @@ body {
 #content {
 	float: none;
 	display: block;
-	height: 15%;
-
+	margin-top: 1%;
+	padding: 5%;
+}
 }
 
-		
-#mylittledude {
-	float: none;
-	display: block;
-	width: 85%;
-	background-image: url("images/bg-970.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 70%;
-	margin: 0 auto;
-}
-.green {
-	background-image: url("images/bg-970-green.png") !important;
-		}
-.jersey {
-	background-image: url("images/bg-970-jersey.png") !important;
-		}
-	.keto {
-	background-image: url("images/bg-970-keto.png") !important;
-		}
-
-}
- @media (min-width: 480px) and (max-width: 599px) {
+@media (min-width: 480px) and (max-width: 599px) {
 #container {
 	width: 96%;
 	margin: 0 auto;
@@ -297,17 +215,6 @@ body {
 	display: block;
 	float: left;
 	width: 60%;
-
-}
-#mylittledude {
-	display: block;
-	float: right;
-	width: 40%;
-	background-image: url("images/bg-320.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	margin: 0 auto;
 }
 }
 
@@ -327,16 +234,5 @@ body {
 	float: none;
 	display: block;
 	height: 35%;
-
-}
-#mylittledude {
-	float: none;
-	display: block;
-	width: 70%;
-	background-image: url("images/bg-320.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	margin: 0 auto;
 }
 }
