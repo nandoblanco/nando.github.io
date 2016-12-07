@@ -201,9 +201,12 @@ li {
 
 @media (min-width: 480px) and (max-width: 599px) {
 #container {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 	height: 100%;
+	background-image: url("images/bg-200.png");
+	background-position: right bottom -1000%;
+	background-repeat: no-repeat;
 }
 #header {
 	width: 100%;
@@ -215,14 +218,20 @@ li {
 	display: block;
 	float: left;
 	width: 60%;
+	height: 100%;
+	margin-left: 5%;
+	margin-top: 10%;
 }
 }
 
 @media (max-width: 479px) {
 #container {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 	height: 100%;
+	background-image: url("images/bg-200.png");
+	background-position: center bottom -30%;
+	background-repeat: no-repeat;
 }
 #header {
 	width: 100%;
@@ -233,6 +242,7 @@ li {
 #content {
 	float: none;
 	display: block;
-	height: 35%;
+	margin-top: 5%;
+	padding: 5%;
 }
 }
