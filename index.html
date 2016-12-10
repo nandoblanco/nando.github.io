@@ -20,18 +20,19 @@
   <div id="content">
     <div class="my-slider">
       <ul>
-        <li><span class="bgfont">Hello.</span></li>
-        <li><span class="bgfont">My name is Fernando Blanco, most people call me Nando.</span></li>
-        <li><span class="bgfont">I'm a self-taught freelance web developer that specializes in front-end development.</span></li>
-        <li><span class="bgfont">I have experience with HTML, CSS, JavaScript, jQuery, AngularJS, PHP, WordPress and VTL (Velocity Template Language).</span></li>
-        <li><span class="bgfont">My work process includes (but is not limited to): trial  &amp; error, Google and Stack Overflow. </span></li>
-        <li><span class="bgfont">I'm a father, a husband and a nine-to-five zombie.</span></li>
-        <li><span class="bgfont">I&rsquo;m currently employed at a private South Florida university  (since 2006).</span></li>
-        <li><span class="bgfont">I was once a <strong>Part Time Gamer</strong>, I am now a <strong>no time gamer</strong>.</span></li>
-		<li><span class="bgfont">I&rsquo;m an on-again, off-again <strong><span id="keto">Keto</span></strong> Warrior. </span></li>
-        <li><span class="bgfont">I was born and raised in <strong><span id="jersey">Jersey</span></strong>; I moved to South Florida in 2000.</span></li>
-        <li><span class="bgfont">Although I&rsquo;d never move back, I do miss the <strong>snow</strong>. </span></li>
-        <li><span class="bgfont">I bleed <strong><span id="green">green</span></strong>.</span></li>
+        <li><span>Hello.</span></li>
+        <li><span>My name is Fernando Blanco, most people call me Nando.</span></li>
+        <li><span>I'm a self-taught freelance web developer that specializes in front-end development.</span></li>
+        <li><span>I'm also a full-time Web Developer at a private South Florida university (since 2006).</span></li>
+        <li><span>I reaaaaally enjoy working on web sites.</span></li>
+        <li><span>I have experience with HTML, CSS, JavaScript, jQuery, AngularJS, PHP, WordPress and VTL (Velocity Template Language).</span></li>
+        <li><span>I enjoy the learning opportunity trial & error produces, but Google and Stack Overflow can work miracles. </span></li>
+        <li><span>I'm a father, a husband and a nine-to-five zombie.</span></li>
+        <li><span>I was once a <strong>Part Time Gamer</strong>, I am now a <strong>no time gamer</strong>.</span></li>
+		<li><span>I'm an on-again, off-again <strong><span id="keto">Keto</span></strong> Warrior. </span></li>
+        <li><span>I was born and raised in <strong><span id="jersey">Jersey</span></strong>; I moved to South Florida in 2000. I miss the snow.</span></li>
+
+        <li><span>I bleed <strong><span id="green">green</span></strong>.</span></li>
       </ul>
     </div>
   </div>
@@ -46,9 +47,11 @@ checkSize();
 $(window).resize(checkSize);
 $('#green').hover(function(){
 	//alert("hover");
-	$('#container').addClass('green');
+	$('#container').addClass('jersey');
+	$('body').addClass('green');
 	},function(){ 
-	$('#container').removeClass('green');
+	$('#container').removeClass('jersey');
+	$('body').removeClass('green');
 	});	
 $('#jersey').hover(function(){
 	//alert("hover");
