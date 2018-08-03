@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nando Blanco</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+<link href="unslider.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/icons/manifest.json">
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div id="container">
+  <div id="header">Nando Blanco</div>
+  <div id="content">
+    <div class="my-slider">
+      <ul>
+        <li><span class="bgfont">Hello.</span></li>
+        <li><span class="bgfont">My name is Fernando Blanco, most people call me Nando.</span></li>
+        <li><span class="bgfont">I'm a self-taught freelance web developer that specializes in front-end development.</span></li>
+        <li><span class="bgfont">I have experience with HTML, CSS, JavaScript, jQuery, AngularJS, PHP, WordPress and VTL (Velocity Template Language).</span></li>
+        <li><span class="bgfont">My work process includes (but is not limited to): trial  &amp; error, Google and Stack Overflow. </span></li>
+        <li><span class="bgfont">I'm a father, a husband and a nine-to-five zombie.</span></li>
+        <li><span class="bgfont">I&rsquo;m currently employed at a private South Florida university  (since 2006).</span></li>
+        <li><span class="bgfont">I was once a <strong>Part Time Gamer</strong>, I am now a <strong>no time gamer</strong>.</span></li>
+		<li><span class="bgfont">I&rsquo;m an on-again, off-again <strong><span id="keto">Keto</span></strong> Warrior. </span></li>
+        <li><span class="bgfont">I was born and raised in <strong><span id="jersey">Jersey</span></strong>; I moved to South Florida in 2000.</span></li>
+        <li><span class="bgfont">Although I&rsquo;d never move back, I do miss the <strong>snow</strong>. </span></li>
+        <li><span class="bgfont">I bleed <strong><span id="green">green</span></strong>.</span></li>
+      </ul>
+    </div>
+  </div>
+<!--  <div id="mylittledude"></div>-->
+</div>
+<div class="sizechecker"></div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script src="unslider.js"></script> 
+<script>
+jQuery(document).ready(function($) {
+checkSize();
+$(window).resize(checkSize);
+$('#green').hover(function(){
+	//alert("hover");
+	$('#container').addClass('green');
+	},function(){ 
+	$('#container').removeClass('green');
+	});	
+$('#jersey').hover(function(){
+	//alert("hover");
+	$('#container').addClass('jersey');
+	},function(){ 
+	$('#container').removeClass('jersey');
+	});	
+});
+function checkSize(){
+if ($(".sizechecker").css("float") == "none" ){
+$('.my-slider').unslider();
+}
+}
+</script> 
+</body>
+</html>

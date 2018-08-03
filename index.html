@@ -1,67 +1,356 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Nando Blanco</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
-<link href="unslider.css" rel="stylesheet" type="text/css">
-<link href="style.css" rel="stylesheet" type="text/css">
-<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/icons/manifest.json">
-<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nando.io</title>
+	<meta name="description" content="My name is Fernando (most people call me Nando), I'm a father, husband & professional coder monkey.">
+	<meta name="keywords" content="Web Developer,HTML5,CSS3,XML,JavaScript,jQuery,Velocity">
+	<meta name="author" content="Fernando Blanco">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<style>
+		html {
+			line-height: 1.15;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%
+		}
+		
+		h1 {
+			font-size: 2em;
+			margin: .67em 0
+		}
+		
+		hr {
+			box-sizing: content-box;
+			height: 0;
+			overflow: visible
+		}
+		
+		main {
+			display: block
+		}
+		
+		pre {
+			font-family: monospace, monospace;
+			font-size: 1em
+		}
+		
+		a {
+			background-color: transparent
+		}
+		
+		abbr[title] {
+			text-decoration: underline;
+			text-decoration: underline dotted
+		}
+		
+		b,
+		strong {
+			font-weight: bolder
+		}
+		
+		code,
+		kbd,
+		samp {
+			font-family: monospace, monospace;
+			font-size: 1em
+		}
+		
+		small {
+			font-size: 80%
+		}
+		
+		audio,
+		video {
+			display: inline-block
+		}
+		
+		audio:not([controls]) {
+			display: none;
+			height: 0
+		}
+		
+		img {
+			border-style: none
+		}
+		
+		svg:not(:root) {
+			overflow: hidden
+		}
+		
+		button,
+		input,
+		optgroup,
+		select,
+		textarea {
+			margin: 0
+		}
+		
+		button {
+			overflow: visible;
+			text-transform: none
+		}
+		
+		button,
+		[type="button"],
+		[type="reset"],
+		[type="submit"] {
+			-webkit-appearance: button
+		}
+		
+		::-moz-focus-inner {
+			border-style: none;
+			padding: 0
+		}
+		
+		button:-moz-focusring,
+		[type="button"]:-moz-focusring,
+		[type="reset"]:-moz-focusring,
+		[type="submit"]:-moz-focusring {
+			outline: 1px dotted ButtonText
+		}
+		
+		fieldset {
+			padding: .35em .75em .625em
+		}
+		
+		input {
+			overflow: visible
+		}
+		
+		legend {
+			box-sizing: border-box;
+			color: inherit;
+			display: table;
+			max-width: 100%;
+			padding: 0;
+			white-space: normal
+		}
+		
+		progress {
+			display: inline-block;
+			vertical-align: baseline
+		}
+		
+		select {
+			text-transform: none
+		}
+		
+		textarea {
+			overflow: auto
+		}
+		
+		[type="checkbox"],
+		[type="radio"] {
+			box-sizing: border-box;
+			padding: 0
+		}
+		
+		::-webkit-inner-spin-button,
+		::-webkit-outer-spin-button {
+			height: auto
+		}
+		
+		[type="search"] {
+			-webkit-appearance: textfield;
+			outline-offset: -2px
+		}
+		
+		::-webkit-search-decoration {
+			-webkit-appearance: none
+		}
+		
+		::-webkit-file-upload-button {
+			-webkit-appearance: button;
+			font: inherit
+		}
+		
+		details {
+			display: block
+		}
+		
+		dialog {
+			background-color: #fff;
+			border: solid;
+			color: #000;
+			display: block;
+			height: -moz-fit-content;
+			height: -webkit-fit-content;
+			height: fit-content;
+			left: 0;
+			margin: auto;
+			padding: 1em;
+			position: absolute;
+			right: 0;
+			width: -moz-fit-content;
+			width: -webkit-fit-content;
+			width: fit-content
+		}
+		
+		dialog:not([open]) {
+			display: none
+		}
+		
+		summary {
+			display: list-item
+		}
+		
+		canvas {
+			display: inline-block
+		}
+		
+		template {
+			display: none
+		}
+		
+		[hidden] {
+			display: none
+		}
+		
+		html,
+		body {
+			height: 100%;
+		}
+		
+		body {
+			font-family: 'Open Sans', sans-serif, arial;
+			background-color: #016d94;
+			margin: 0;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: center;
+			padding-top: 50px;
+		}
+		
+		#prettysm {
+			display: none;
+		}
+		
+		@media all and (min-height: 800px) and (min-width: 901px) {
+			body {
+				padding-top: 0;
+				align-items: center;
+			}
+		}
+		
+		#container {
+			width: 100%;
+			max-width: 900px;
+			height: 795px;
+			border: solid 5px #fff;
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 50px;
+		}
+		
+		@media all and (min-height: 795px) {
+			#container {
+				margin-bottom: 0;
+			}
+		}
+		
+		#pretty {
+			order: 1;
+			width: 520px;
+			border-right: solid 5px #fff;
+		}
+		
+		#words {
+			width: 100%;
+			background-color: #fff;
+			order: 2;
+			text-align: center;
+			height: 100%;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		#words div {
+			margin: 0 20px;
+		}
+		
+		#words h1 span {
+			background-color: #016d94;
+			color: #fff;
+		}
+		
+		#words p {
+			line-height: 27px;
+			letter-spacing: 2px;
+			word-spacing: 2px;
+			margin-bottom: 22px;
+		}
+		
+		@media (max-width: 900px) {
+			body {
+				padding-top: 0 !important;
+				background-image: url(bg768.png);
+				background-position: top left;
+				background-size: cover;
+			}
+			#prettysm {
+				display: inline-block;
+				width: 35%;
+				border-radius: 50%;
+			}
+			#container {
+				border: none;
+				height: auto;
+			}
+			#pretty {
+				display: none;
+			}
+			#words {
+				width: 100%;
+				background-color: #fff;
+				margin: 30px;
+				border: none;
+			}
+			#words div {
+				margin: 50px 0;
+			}
+		}
+		
+		@media (max-width: 460px) {
+			body {
+				padding-top: 0 !important;
+				background-image: url(bg460.png);
+				background-position: top left;
+				background-size: cover;
+			}
+			#words {
+				margin: 15px;
+			}
+			#words p {
+				line-height: 24px;
+				letter-spacing: 1px;
+				word-spacing: 1px;
+			}
+		}
+	</style>
 </head>
+
 <body>
-<div id="container">
-  <div id="header">Nando Blanco</div>
-  <div id="content">
-    <div class="my-slider">
-      <ul>
-        <li><span class="bgfont">Hello.</span></li>
-        <li><span class="bgfont">My name is Fernando Blanco, most people call me Nando.</span></li>
-        <li><span class="bgfont">I'm a self-taught freelance web developer that specializes in front-end development.</span></li>
-        <li><span class="bgfont">I have experience with HTML, CSS, JavaScript, jQuery, AngularJS, PHP, WordPress and VTL (Velocity Template Language).</span></li>
-        <li><span class="bgfont">My work process includes (but is not limited to): trial  &amp; error, Google and Stack Overflow. </span></li>
-        <li><span class="bgfont">I'm a father, a husband and a nine-to-five zombie.</span></li>
-        <li><span class="bgfont">I&rsquo;m currently employed at a private South Florida university  (since 2006).</span></li>
-        <li><span class="bgfont">I was once a <strong>Part Time Gamer</strong>, I am now a <strong>no time gamer</strong>.</span></li>
-		<li><span class="bgfont">I&rsquo;m an on-again, off-again <strong><span id="keto">Keto</span></strong> Warrior. </span></li>
-        <li><span class="bgfont">I was born and raised in <strong><span id="jersey">Jersey</span></strong>; I moved to South Florida in 2000.</span></li>
-        <li><span class="bgfont">Although I&rsquo;d never move back, I do miss the <strong>snow</strong>. </span></li>
-        <li><span class="bgfont">I bleed <strong><span id="green">green</span></strong>.</span></li>
-      </ul>
-    </div>
-  </div>
-<!--  <div id="mylittledude"></div>-->
-</div>
-<div class="sizechecker"></div>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
-<script src="unslider.js"></script> 
-<script>
-jQuery(document).ready(function($) {
-checkSize();
-$(window).resize(checkSize);
-$('#green').hover(function(){
-	//alert("hover");
-	$('#container').addClass('green');
-	},function(){ 
-	$('#container').removeClass('green');
-	});	
-$('#jersey').hover(function(){
-	//alert("hover");
-	$('#container').addClass('jersey');
-	},function(){ 
-	$('#container').removeClass('jersey');
-	});	
-});
-function checkSize(){
-if ($(".sizechecker").css("float") == "none" ){
-$('.my-slider').unslider();
-}
-}
-</script> 
+	<div id="container">
+		<div id="pretty"><img src="pretty.png" /></div>
+
+		<div id="words">
+			<div>
+				<img id="prettysm" src="me.png" />
+				<h1>Hello</h1>
+				<p>My name is Fernando, most people call me <strong>Nando</strong>.</p>
+				<p>I'm a father, husband & professional coder monkey.</p>
+				<p><img src="nio-email.png" /></p>
+			</div>
 </body>
+
 </html>
